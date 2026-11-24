@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#010a15" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&family=Noto+Sans+KR:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <meta
+      name="description"
+      content="자어의 탄생부터 번식까지 플레이하며 배우는 인터랙티브 해양 생애주기 게임"
+    />
+    <title>The Blue Journey · 해양 생애주기 게임</title>
+    <script type="module" crossorigin src="./assets/index-GOiju4Pk.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BxrQV4EW.css">
+  </head>
+  <body>
+    <main id="app">
+      <section id="game-shell" aria-label="The Blue Journey 게임">
+        <div id="title-overlay"></div>
+        <div id="population-codex-overlay" hidden></div>
+        <div id="game-root"></div>
+      </section>
+    </main>
+    <aside id="orientation-notice" aria-live="polite">
+      <strong>가로 화면으로 돌려주세요</strong>
+      <span>바다 여정은 가로 화면에서 가장 잘 보이고 조작하기 쉽습니다.</span>
+    </aside>
+    <nav id="touch-controls" aria-label="모바일 게임 조작">
+      <div class="touch-dpad" aria-label="이동 방향">
+        <button type="button" data-control="up" aria-label="위로 이동">▲</button>
+        <button type="button" data-control="left" aria-label="왼쪽으로 이동">◀</button>
+        <button type="button" data-control="down" aria-label="아래로 이동">▼</button>
+        <button type="button" data-control="right" aria-label="오른쪽으로 이동">▶</button>
+      </div>
+      <div class="touch-actions">
+        <button type="button" data-control="sound" aria-label="소리 켜기 또는 끄기">소리</button>
+        <button type="button" data-control="pause" aria-label="일시정지 또는 계속하기">일시정지</button>
+        <button type="button" class="dash" data-control="dash" aria-label="대시">DASH</button>
+      </div>
+    </nav>
+  </body>
+</html>

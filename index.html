@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AI Game Maker 지원자 윤정현의 게임 제작 포트폴리오" />
+    <meta name="theme-color" content="#031522" />
+    <title>윤정현 · AI Game Maker Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="페이지 맨 위로">YJ<span>.</span></a>
+      <nav aria-label="주요 메뉴">
+        <a href="#project">Project</a>
+        <a href="#process">Process</a>
+        <a href="#ai">AI Workflow</a>
+        <a href="#other">Other Work</a>
+      </nav>
+      <a class="header-link" href="https://github.com/jh1011" target="_blank" rel="noreferrer">GitHub</a>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">AI GAME MAKER · PORTFOLIO</p>
+          <h1>문제를 정의하고,<br /><span>플레이 가능한 게임</span>으로<br />끝까지 완성합니다.</h1>
+          <p class="hero-description">
+            게임의 재미가 부족한 이유를 관찰하고, AI와 협업해 기능을 구현한 뒤
+            실제 플레이로 다시 검증합니다. 기획과 개발의 경계를 넘나드는 윤정현입니다.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="./game/">게임 플레이</a>
+            <a class="button secondary" href="#project">프로젝트 보기</a>
+          </div>
+          <dl class="hero-meta">
+            <div><dt>ROLE</dt><dd>Game Design · Development · QA</dd></div>
+            <div><dt>STACK</dt><dd>Phaser · TypeScript · Vite</dd></div>
+            <div><dt>TEAM</dt><dd>2인 팀 · 제작 전반 주도</dd></div>
+          </dl>
+        </div>
+        <div class="hero-visual reveal delay-1">
+          <img src="./assets/blue-journey-cover.png" alt="The Blue Journey 게임 시작 화면" />
+          <div class="hero-caption"><span>FEATURED PROJECT</span><strong>The Blue Journey</strong></div>
+        </div>
+      </section>
+
+      <section class="project-intro section-shell" id="project">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 · FEATURED PROJECT</p>
+          <h2>치어에서 번식까지,<br />해양 생태를 직접 플레이하다.</h2>
+          <p>The Blue Journey는 생애주기와 생존 전략을 조작과 선택으로 경험하는 2D 해양 생태 교육 게임입니다.</p>
+        </div>
+        <div class="project-facts reveal delay-1">
+          <article><span>PROJECT GOAL</span><strong>설명 중심의 생태 교육을<br />직접 조작하는 경험으로 전환</strong></article>
+          <article><span>MY ROLE</span><strong>기획 · 시스템 설계 · 개발<br />UI/UX · 사운드 · QA 주도</strong></article>
+          <article><span>TEAMMATE</span><strong>플레이테스트 · 오류 및<br />완성도 검수 · 피드백</strong></article>
+          <article><span>OUTPUT</span><strong>프로덕션 빌드와<br />실제 Chrome 플레이 QA</strong></article>
+        </div>
+      </section>
+
+      <section class="life-cycle section-shell">
+        <div class="cycle-copy reveal">
+          <p class="eyebrow">GAME DESIGN</p>
+          <h2>생태 정보가<br />게임 규칙이 되도록.</h2>
+          <p>부화부터 산란까지의 성장 단계를 플레이 목표로 바꾸고, 어종별 생태 차이를 속도·호흡·야간 행동 규칙에 반영했습니다.</p>
+        </div>
+        <div class="cycle-route reveal delay-1" aria-label="게임 생애주기 단계">
+          <div><b>01</b><strong>부화</strong><span>알에서 깨어나는 시작</span></div>
+          <div><b>02</b><strong>자어기</strong><span>먹이 탐색과 위험 학습</span></div>
+          <div><b>03</b><strong>성육장</strong><span>종과 개체군 전략 선택</span></div>
+          <div><b>04</b><strong>성어기</strong><span>서식지 도착과 생존</span></div>
+          <div><b>05</b><strong>산란</strong><span>번식으로 생애주기 완성</span></div>
+        </div>
+        <img class="fish-lineup reveal" src="./assets/fish-lineup.png" alt="게임에 등장하는 도트 그래픽 어종 캐릭터" />
+      </section>
+
+      <section class="process section-shell" id="process">
+        <div class="section-heading reveal">
+          <p class="eyebrow">02 · PROBLEM SOLVING</p>
+          <h2>기능이 아니라<br />문제에서 출발했습니다.</h2>
+          <p>관찰 → 판단 → 구현 → 검증을 반복하며 플레이할 이유를 만들었습니다.</p>
+        </div>
+        <div class="process-grid">
+          <article class="process-card reveal">
+            <span class="problem-tag">PROBLEM 01</span>
+            <h3>실패 위험이 없어<br />긴장감이 약하다</h3>
+            <p><b>판단</b> 회피와 생존을 판단할 자원이 필요했습니다.</p>
+            <p><b>구현</b> LIFE, 피격, 회복, 실패 조건을 추가했습니다.</p>
+            <strong class="result">위험 요소가 실제 선택으로 변화</strong>
+          </article>
+          <article class="process-card reveal delay-1">
+            <span class="problem-tag">PROBLEM 02</span>
+            <h3>반복 구간이<br />같은 패턴으로 흐른다</h3>
+            <p><b>판단</b> 예고된 돌발 상황이 흐름을 깨야 했습니다.</p>
+            <p><b>구현</b> 경고·추격·결과로 이어지는 포식자 이벤트를 설계했습니다.</p>
+            <strong class="result">수동 회피가 능동 생존 플레이로 변화</strong>
+          </article>
+          <article class="process-card reveal delay-2">
+            <span class="problem-tag">PROBLEM 03</span>
+            <h3>엔딩 후 다시<br />플레이할 이유가 없다</h3>
+            <p><b>판단</b> 학습 기록을 수집 목표로 바꾸기로 했습니다.</p>
+            <p><b>구현</b> 개체군 선택, 관찰 도감, 로컬 저장을 연결했습니다.</p>
+            <strong class="result">다른 선택으로 기록을 채우는 반복 루프</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="screens section-shell" aria-label="게임 플레이 화면">
+        <figure class="screen-wide reveal">
+          <img src="./assets/gameplay-flow.png" alt="FLOW와 먹이 콤보가 작동하는 플레이 화면" />
+          <figcaption><span>CORE LOOP</span><strong>FLOW · 먹이 콤보 · Schooling Fever</strong></figcaption>
+        </figure>
+        <figure class="reveal delay-1">
+          <img src="./assets/predator-chase.png" alt="포식자 추격 이벤트 플레이 화면" />
+          <figcaption><span>ACTIVE EVENT</span><strong>경고 후 제한 선회 추격</strong></figcaption>
+        </figure>
+        <figure class="reveal delay-2">
+          <img src="./assets/population-codex.png" alt="발견한 개체군이 기록되는 관찰 도감 화면" />
+          <figcaption><span>REPLAY LOOP</span><strong>8개 개체군 관찰 도감</strong></figcaption>
+        </figure>
+      </section>
+
+      <section class="ai-workflow section-shell" id="ai">
+        <div class="section-heading light reveal">
+          <p class="eyebrow">03 · AI COLLABORATION</p>
+          <h2>AI가 답을 정하지 않도록,<br />문제와 완료 조건을 통제했습니다.</h2>
+        </div>
+        <div class="role-split reveal delay-1">
+          <article>
+            <span>MY DECISION</span>
+            <h3>제가 맡은 일</h3>
+            <ul>
+              <li>플레이에서 부족한 재미 정의</li>
+              <li>생태 정확성과 게임성의 우선순위 결정</li>
+              <li>충돌 범위와 피드백의 완료 기준 설정</li>
+              <li>코드와 화면 검토 후 채택 여부 판단</li>
+              <li>실제 입력으로 플레이 QA</li>
+            </ul>
+          </article>
+          <div class="workflow-line" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+          <article>
+            <span>AI SUPPORT</span>
+            <h3>AI에게 맡긴 일</h3>
+            <ul>
+              <li>구현 방법과 코드 초안 탐색</li>
+              <li>버그 원인 후보와 수정 범위 정리</li>
+              <li>Phaser 구조화와 리팩터링 제안</li>
+              <li>검증 체크리스트와 테스트 후보 생성</li>
+              <li>반복 수정의 작업 속도 보조</li>
+            </ul>
+          </article>
+        </div>
+        <p class="workflow-summary reveal">문제 정의 <i></i> 제약 구조화 <i></i> AI 구현 후보 <i></i> 코드·화면 검토 <i></i> 플레이 QA</p>
+      </section>
+
+      <section class="engineering section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">04 · ENGINEERING & QA</p>
+          <h2>새 도구를 배우고,<br />검증 가능한 구조로 옮겼습니다.</h2>
+          <p>HTML 프로토타입을 Phaser와 TypeScript 구조로 이식하고 Scene, Data, System, Config의 변경 범위를 분리했습니다.</p>
+        </div>
+        <div class="metrics reveal delay-1">
+          <article><strong>0</strong><span>TypeScript 오류</span></article>
+          <article><strong>0</strong><span>브라우저 런타임 오류</span></article>
+          <article><strong>3</strong><span>포식자 퇴장 경로 검증</span></article>
+          <article><strong>3000×1800</strong><span>DPR 2 고해상도 캔버스</span></article>
+        </div>
+        <div class="tech-row reveal">
+          <span>Phaser 4.2.1</span><span>TypeScript 6</span><span>Vite</span><span>Frame-independent movement</span><span>LocalStorage</span><span>Responsive UI</span>
+        </div>
+      </section>
+
+      <section class="other-work section-shell" id="other">
+        <div class="section-heading reveal">
+          <p class="eyebrow">05 · OTHER WORK</p>
+          <h2>게임 밖에서도<br />문제를 도구로 바꿉니다.</h2>
+        </div>
+        <div class="other-grid">
+          <article class="other-card reveal">
+            <img src="./assets/eda-automation.png" alt="EDA 자동화 GUI 분석 도구 화면" />
+            <div><span>R · SHINY</span><h3>EDA Automation</h3><p>반복 시각화 코드를 비개발자도 사용할 수 있는 GUI 분석 도구로 전환했습니다.</p><a href="https://github.com/jh1011/r-shiny-data-visualization-app" target="_blank" rel="noreferrer">Repository</a></div>
+          </article>
+          <article class="other-card reveal delay-1">
+            <img src="./assets/creditpulse.png" alt="CreditPulse 취약징후 기업 선별 결과 그래프" />
+            <div><span>DATA ANALYSIS</span><h3>CreditPulse</h3><p>공개 재무지표로 제한된 검토 자원을 어디에 먼저 투입할지 구조화했습니다.</p><span class="coming">Case study</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact section-shell reveal">
+        <p class="eyebrow">LET'S BUILD THE NEXT PLAY</p>
+        <h2>피드백을 다음 플레이 규칙으로 바꾸는<br />AI Game Maker가 되겠습니다.</h2>
+        <div class="contact-links">
+          <a class="button primary" href="./game/">게임 플레이</a>
+          <a class="button secondary dark" href="https://github.com/jh1011" target="_blank" rel="noreferrer">GitHub 프로필</a>
+        </div>
+        <p class="contact-name">윤정현 · Game Design / Development / QA</p>
+      </section>
+    </main>
+
+    <footer><span>© 2026 Yoon Junghyun</span><span>Built with HTML, CSS and AI collaboration</span></footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
