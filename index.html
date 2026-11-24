@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="AI Game Maker 지원자 윤정현의 게임 제작 포트폴리오" />
     <meta name="theme-color" content="#031522" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="윤정현 · AI Game Maker Portfolio" />
+    <meta property="og:description" content="문제를 정의하고 플레이 가능한 게임으로 완성하는 AI Game Maker 포트폴리오" />
+    <meta property="og:url" content="https://jh1011.github.io/The-Blue-Journey/" />
+    <meta property="og:image" content="https://jh1011.github.io/The-Blue-Journey/assets/blue-journey-cover.png" />
     <title>윤정현 · AI Game Maker Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,9 +21,10 @@
       <a class="brand" href="#top" aria-label="페이지 맨 위로">YJ<span>.</span></a>
       <nav aria-label="주요 메뉴">
         <a href="#project">Project</a>
-        <a href="#process">Process</a>
+        <a href="#ownership">My Role</a>
+        <a href="#motivation">Game Design</a>
+        <a href="#process">Iteration</a>
         <a href="#ai">AI Workflow</a>
-        <a href="#other">Other Work</a>
       </nav>
       <a class="header-link" href="https://github.com/jh1011" target="_blank" rel="noreferrer">GitHub</a>
     </header>
@@ -39,7 +45,7 @@
           <dl class="hero-meta">
             <div><dt>ROLE</dt><dd>Game Design · Development · QA</dd></div>
             <div><dt>STACK</dt><dd>Phaser · TypeScript · Vite</dd></div>
-            <div><dt>TEAM</dt><dd>2인 팀 · 제작 전반 주도</dd></div>
+            <div><dt>TEAM</dt><dd>2인 팀 · Project Lead · 기여도 약 90%</dd></div>
           </dl>
         </div>
         <div class="hero-visual reveal delay-1">
@@ -56,9 +62,45 @@
         </div>
         <div class="project-facts reveal delay-1">
           <article><span>PROJECT GOAL</span><strong>설명 중심의 생태 교육을<br />직접 조작하는 경험으로 전환</strong></article>
-          <article><span>MY ROLE</span><strong>기획 · 시스템 설계 · 개발<br />UI/UX · 사운드 · QA 주도</strong></article>
-          <article><span>TEAMMATE</span><strong>플레이테스트 · 오류 및<br />완성도 검수 · 피드백</strong></article>
-          <article><span>OUTPUT</span><strong>프로덕션 빌드와<br />실제 Chrome 플레이 QA</strong></article>
+          <article><span>MY ROLE</span><strong>Project Lead<br />Game Designer · Lead Developer</strong></article>
+          <article><span>CONTRIBUTION</span><strong>기획 · 시스템 · 개발 · UI/UX<br />사운드 · 통합 QA 약 90%</strong></article>
+          <article><span>TEAMMATE</span><strong>플레이테스트 · 오류 확인<br />완성도 검수와 피드백</strong></article>
+        </div>
+      </section>
+
+      <section class="ownership section-shell" id="ownership">
+        <div class="ownership-lead reveal">
+          <p class="eyebrow">MY OWNERSHIP</p>
+          <h2>아이디어를 정하는 데서 멈추지 않고,<br />플레이 가능한 결과까지 연결했습니다.</h2>
+          <p>
+            2인 팀에서 프로젝트 리드로 참여했습니다. 팀원이 플레이테스트와 검수를 맡았고,
+            저는 문제 정의부터 시스템 설계, 구현, 화면 통합과 최종 QA까지 제작 전반을 담당했습니다.
+          </p>
+          <div class="ownership-score" aria-label="프로젝트 기여도 약 90퍼센트">
+            <strong>90<small>%</small></strong>
+            <span>기여도<br />직접 설계·구현한 범위</span>
+          </div>
+        </div>
+        <div class="ownership-map reveal delay-1">
+          <article>
+            <span>GAME DESIGN</span>
+            <strong>생애주기와 재미 구조 설계</strong>
+            <p>성장 단계, 어종별 생존 전략, 즉시 보상과 재도전 목표를 게임 규칙으로 정의했습니다.</p>
+          </article>
+          <article>
+            <span>DEVELOPMENT</span>
+            <strong>HTML 프로토타입을 Phaser로 이식</strong>
+            <p>프레임 독립 이동과 충돌, 포식자 상태 전환, 저장 시스템과 반응형 UI를 구현했습니다.</p>
+          </article>
+          <article>
+            <span>POLISH & QA</span>
+            <strong>조작감·피드백·완성도 검증</strong>
+            <p>피격 연출, 사운드, 속도와 충돌 범위를 조정하고 실제 Chrome 입력으로 결과를 확인했습니다.</p>
+          </article>
+          <aside>
+            <span>TEAMMATE REVIEW</span>
+            <p>팀원은 플레이테스트를 통해 눈의 피로, 속도감, 오류와 화면 완성도를 검수했습니다. 피드백은 제가 구현 조건으로 바꾸고 다시 플레이하며 반영했습니다.</p>
+          </aside>
         </div>
       </section>
 
@@ -78,11 +120,70 @@
         <img class="fish-lineup reveal" src="./assets/fish-lineup.png" alt="게임에 등장하는 도트 그래픽 어종 캐릭터" />
       </section>
 
+      <section class="motivation section-shell" id="motivation">
+        <div class="section-heading light reveal">
+          <p class="eyebrow">PLAYER MOTIVATION</p>
+          <h2>플레이할 이유를<br />세 개의 시간축으로 설계했습니다.</h2>
+          <p>조작 직후의 손맛, 한 판을 버티는 긴장감, 엔딩 뒤의 재도전 목표가 서로 이어지도록 시스템을 배치했습니다.</p>
+        </div>
+        <div class="motivation-ladder">
+          <article class="reveal">
+            <span>지금 2초</span>
+            <h3>즉시 보상</h3>
+            <p>같은 방향으로 유영하면 FLOW가 차오르고, 2.2초 안에 먹이를 이어 먹으면 콤보 배율이 상승합니다.</p>
+            <strong>조작을 잘했다는 감각</strong>
+          </article>
+          <article class="reveal delay-1">
+            <span>이번 한 판</span>
+            <h3>생존 긴장</h3>
+            <p>LIFE와 피격, 5초 포식자 추격, 성장 단계 도착 목표가 위험을 판단하고 회피할 이유를 만듭니다.</p>
+            <strong>끝까지 살아남을 이유</strong>
+          </article>
+          <article class="reveal delay-2">
+            <span>다음 플레이</span>
+            <h3>수집과 재도전</h3>
+            <p>4종 어류와 8개 개체군의 선택 결과를 관찰 도감에 저장해 다른 전략으로 다시 플레이하게 했습니다.</p>
+            <strong>학습 기록을 채울 이유</strong>
+          </article>
+        </div>
+        <div class="design-numbers reveal" aria-label="게임 디자인 핵심 수치">
+          <div><b>1.5s</b><span>FLOW 형성 시간</span></div>
+          <div><b>0.75–1.10×</b><span>유영 속도 변화</span></div>
+          <div><b>2.2s</b><span>먹이 콤보 유지</span></div>
+          <div><b>5s</b><span>포식자 추격 시간</span></div>
+          <div><b>8</b><span>수집 가능한 개체군</span></div>
+        </div>
+      </section>
+
+      <section class="version-story section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">FROM PROTOTYPE TO GAME</p>
+          <h2>첫 버전은 시작 화면은 있었지만,<br />계속 플레이할 이유가 부족했습니다.</h2>
+          <p>완성도를 한 번에 올리려 하지 않고, 실제 플레이에서 부족한 이유를 하나씩 찾아 규칙으로 바꿨습니다.</p>
+        </div>
+        <div class="version-compare">
+          <figure class="reveal">
+            <img src="./assets/first-version-title-screen.png" alt="The Blue Journey 초기 버전 시작 화면" />
+            <figcaption><span>FIRST PROTOTYPE</span><strong>이동과 먹이 수집 중심</strong></figcaption>
+          </figure>
+          <div class="version-decisions reveal delay-1">
+            <p><span>01</span><strong>실패가 없다</strong><b>LIFE와 피격·회복 조건 추가</b></p>
+            <p><span>02</span><strong>패턴이 반복된다</strong><b>경고·추격·결과가 있는 포식자 이벤트</b></p>
+            <p><span>03</span><strong>한 번 끝나면 목표가 없다</strong><b>개체군 선택과 관찰 도감 저장</b></p>
+            <p><span>04</span><strong>생태 스토리가 보이지 않는다</strong><b>부화부터 산란까지 성장 장면 연결</b></p>
+          </div>
+          <figure class="reveal delay-2">
+            <img src="./assets/blue-journey-cover.png" alt="생애주기와 미션을 보여주는 개선된 시작 화면" />
+            <figcaption><span>CURRENT BUILD</span><strong>목표·위험·성장 경로를 먼저 제시</strong></figcaption>
+          </figure>
+        </div>
+      </section>
+
       <section class="process section-shell" id="process">
         <div class="section-heading reveal">
-          <p class="eyebrow">02 · PROBLEM SOLVING</p>
-          <h2>기능이 아니라<br />문제에서 출발했습니다.</h2>
-          <p>관찰 → 판단 → 구현 → 검증을 반복하며 플레이할 이유를 만들었습니다.</p>
+          <p class="eyebrow">ITERATION LOG</p>
+          <h2>기능 목록보다<br />판단 과정을 남겼습니다.</h2>
+          <p>관찰한 문제를 가설과 완료 조건으로 바꾸고, 구현 뒤 다시 플레이하며 채택 여부를 결정했습니다.</p>
         </div>
         <div class="process-grid">
           <article class="process-card reveal">
@@ -96,7 +197,7 @@
             <span class="problem-tag">PROBLEM 02</span>
             <h3>반복 구간이<br />같은 패턴으로 흐른다</h3>
             <p><b>판단</b> 예고된 돌발 상황이 흐름을 깨야 했습니다.</p>
-            <p><b>구현</b> 경고·추격·결과로 이어지는 포식자 이벤트를 설계했습니다.</p>
+            <p><b>구현</b> 경고 후 5초 추격, 제한 선회와 세 가지 퇴장 결과를 설계했습니다.</p>
             <strong class="result">수동 회피가 능동 생존 플레이로 변화</strong>
           </article>
           <article class="process-card reveal delay-2">
@@ -105,6 +206,13 @@
             <p><b>판단</b> 학습 기록을 수집 목표로 바꾸기로 했습니다.</p>
             <p><b>구현</b> 개체군 선택, 관찰 도감, 로컬 저장을 연결했습니다.</p>
             <strong class="result">다른 선택으로 기록을 채우는 반복 루프</strong>
+          </article>
+          <article class="process-card reveal delay-1">
+            <span class="problem-tag">PROBLEM 04</span>
+            <h3>빠른 장애물 때문에<br />위험을 읽기 어렵다</h3>
+            <p><b>판단</b> 속도감은 유지하되 반응할 시간을 보장해야 했습니다.</p>
+            <p><b>구현</b> 포식자·폐그물 속도와 충돌 범위를 조정하고 경고·색·사운드를 분리했습니다.</p>
+            <strong class="result">눈의 피로를 줄이고 조작 납득도 향상</strong>
           </article>
         </div>
       </section>
@@ -126,7 +234,7 @@
 
       <section class="ai-workflow section-shell" id="ai">
         <div class="section-heading light reveal">
-          <p class="eyebrow">03 · AI COLLABORATION</p>
+          <p class="eyebrow">AI COLLABORATION</p>
           <h2>AI가 답을 정하지 않도록,<br />문제와 완료 조건을 통제했습니다.</h2>
         </div>
         <div class="role-split reveal delay-1">
@@ -159,7 +267,7 @@
 
       <section class="engineering section-shell">
         <div class="section-heading reveal">
-          <p class="eyebrow">04 · ENGINEERING & QA</p>
+          <p class="eyebrow">ENGINEERING & QA</p>
           <h2>새 도구를 배우고,<br />검증 가능한 구조로 옮겼습니다.</h2>
           <p>HTML 프로토타입을 Phaser와 TypeScript 구조로 이식하고 Scene, Data, System, Config의 변경 범위를 분리했습니다.</p>
         </div>
@@ -171,23 +279,6 @@
         </div>
         <div class="tech-row reveal">
           <span>Phaser 4.2.1</span><span>TypeScript 6</span><span>Vite</span><span>Frame-independent movement</span><span>LocalStorage</span><span>Responsive UI</span>
-        </div>
-      </section>
-
-      <section class="other-work section-shell" id="other">
-        <div class="section-heading reveal">
-          <p class="eyebrow">05 · OTHER WORK</p>
-          <h2>게임 밖에서도<br />문제를 도구로 바꿉니다.</h2>
-        </div>
-        <div class="other-grid">
-          <article class="other-card reveal">
-            <img src="./assets/eda-automation.png" alt="EDA 자동화 GUI 분석 도구 화면" />
-            <div><span>R · SHINY</span><h3>EDA Automation</h3><p>반복 시각화 코드를 비개발자도 사용할 수 있는 GUI 분석 도구로 전환했습니다.</p><a href="https://github.com/jh1011/r-shiny-data-visualization-app" target="_blank" rel="noreferrer">Repository</a></div>
-          </article>
-          <article class="other-card reveal delay-1">
-            <img src="./assets/creditpulse.png" alt="CreditPulse 취약징후 기업 선별 결과 그래프" />
-            <div><span>DATA ANALYSIS</span><h3>CreditPulse</h3><p>공개 재무지표로 제한된 검토 자원을 어디에 먼저 투입할지 구조화했습니다.</p><span class="coming">Case study</span></div>
-          </article>
         </div>
       </section>
 
