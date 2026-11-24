@@ -1,4 +1,10 @@
-## Featured project — The Blue Journey
+# The Blue Journey
+
+### [🎮 게임 바로 실행](https://jh1011.github.io/The-Blue-Journey/game/)
+
+[프로젝트 소개 페이지](https://jh1011.github.io/The-Blue-Journey/) · [소스 코드 보기](https://github.com/jh1011/The-Blue-Journey)
+
+## Featured project
 
 치어에서 번식까지의 생애주기와 생존 전략을 직접 조작하는 2D 해양 생태 교육 게임입니다.
 해양 생태 교육 데모로 시작했으며, OpenAI 게임 해커톤 출품을 준비하면서 LIFE, 포식자 이벤트, 개체군 도감과 생애주기 연출을 확장했습니다. 현재도 피드백을 반영하며 개선 중인 플레이어블 빌드입니다.
